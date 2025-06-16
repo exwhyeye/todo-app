@@ -215,6 +215,13 @@ function close(): void {
       gap: 20px;
     }
 
+    @media (max-width: 375px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
     h1 {
       cursor: pointer;
     }
@@ -236,7 +243,7 @@ function close(): void {
   display: flex;
   flex-direction: column;
 
-  padding-right: 20px;
+  //padding-right: 20px;
   gap: 10px;
 
   overflow-y: auto;
