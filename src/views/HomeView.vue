@@ -243,7 +243,6 @@ function close(): void {
   display: flex;
   flex-direction: column;
 
-  //padding-right: 20px;
   gap: 10px;
 
   overflow-y: auto;
