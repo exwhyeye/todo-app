@@ -1,0 +1,27 @@
+@use 'base';
+
+#app {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: var(--color-background);
+  }
+}
