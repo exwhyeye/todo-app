@@ -12,11 +12,12 @@ defineProps({
 
 const emit = defineEmits(['update:modelValue', 'blur'])
 
-const handleInput = (event) => {
-  emit('update:modelValue', event.target.value)
+const handleInput = (event: Event) => {
+  const target = event.target as HTMLInputElement
+  emit('update:modelValue', target.value)
 }
 
-const handleBlur = (event) => {
+const handleBlur = (event: Event) => {
   emit('blur', event)
 }
 </script>

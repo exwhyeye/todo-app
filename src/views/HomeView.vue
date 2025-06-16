@@ -15,7 +15,12 @@ const todosIncompleted = ref<_TodoItem[]>([])
 const currentTab = ref<'active' | 'done'>('active')
 const isMobile = ref(window.innerWidth <= 768)
 const showModal = ref(false)
-const modalTodo = ref<_TodoItem | null>(null)
+const modalTodo = ref<_TodoItem>({
+  id: Date.now(),
+  userId: 1,
+  title: '',
+  completed: false,
+})
 
 onMounted(async () => {
   window.addEventListener('resize', handleResize)
